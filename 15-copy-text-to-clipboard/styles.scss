@@ -24,11 +24,14 @@ button {
 
     &:hover #tooltip {
         visibility: visible;
+        opacity: 1;
     }
 }
 
 #tooltip {
     visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
     width: 140px;
     background-color: #555;
     color: white;
